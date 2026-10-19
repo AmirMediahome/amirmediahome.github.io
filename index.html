@@ -213,8 +213,11 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 <script>
 (function(){
  var f=document.getElementById('leadForm');if(!f)return;
+ var d=document.getElementById('f_date');
+ if(d){var t=new Date(),iso=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');d.min=iso;
+  var chk=function(){d.setCustomValidity(d.value&&d.value<iso?'אפשר לבחור תאריך מהיום והלאה':'')};d.addEventListener('input',chk);d.addEventListener('change',chk);}
  f.addEventListener('submit',function(e){
-  e.preventDefault();var b=f.querySelector('[type=submit]'),err=document.getElementById('formErr');err.hidden=true;b.disabled=true;b.textContent='שולח…';
+  e.preventDefault();if(d&&d.value&&d.value<d.min){d.setCustomValidity('אפשר לבחור תאריך מהיום והלאה');d.reportValidity();return}var b=f.querySelector('[type=submit]'),err=document.getElementById('formErr');err.hidden=true;b.disabled=true;b.textContent='שולח…';
   fetch('https://formsubmit.co/ajax/AmirMediaHome@gmail.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
    .then(function(r){if(!r.ok)throw 0;return r.json()})
    .then(function(){f.hidden=true;document.getElementById('thanks').hidden=false})
