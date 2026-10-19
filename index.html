@@ -30,12 +30,26 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 @media (max-width:760px){.amh .hidem{display:none}.amh h1{font-size:40px !important}.amh h2{font-size:30px !important}.amh .pad{padding-inline:20px !important}}
 </style>
 <style>
-[hidden]{display:none !important}html{scroll-behavior:smooth}#contact,#services,#how,#about,#gallery,#slides{scroll-margin-top:80px}
+[hidden]{display:none !important}html{scroll-behavior:smooth}#contact,#services,#how,#about,#gallery,#slides,#extras{scroll-margin-top:80px}
 .amh form [type=submit][disabled]{opacity:.6;cursor:wait}
 @media (max-width:760px){.amh form{grid-template-columns:minmax(0,1fr) !important}.amh form>div{grid-column:1/-1}.amh #contact>div{padding:24px !important}.amh #about .stat3{grid-template-columns:minmax(0,1fr) !important}}
 </style>
 <style>
 .flowarr{align-self:center;flex:none}@media (max-width:760px){.flow{flex-direction:column}.flowarr{transform:rotate(-90deg);margin:0 auto}#slides>div{padding:24px !important}#slides h2{font-size:28px !important}}
+.xc{background:#16181B;border:1px solid #2A2D31;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mk{position:relative;aspect-ratio:16/9;background:linear-gradient(180deg,#24272C,#1A1C20);border-bottom:1px solid #2A2D31;overflow:hidden;font-family:'Assistant',sans-serif}
+.mk-person{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:26%;height:62%;background:#3A3E44;border-radius:50% 50% 0 0/38% 38% 0 0}
+.mk-person::before{content:"";position:absolute;top:-34%;left:50%;transform:translateX(-50%);width:52%;aspect-ratio:1;border-radius:50%;background:#4A4F56}
+.mk-cap{position:absolute;bottom:8%;left:8%;right:8%;background:rgba(0,0,0,.78);border-radius:4px;padding:5px 8px;display:flex;flex-direction:column;align-items:center;gap:1px;font-size:11px;color:#fff;line-height:1.3;text-align:center}
+.mk-cap span:first-child{color:#C9CBCF;font-size:10px}
+.mk-lt{position:absolute;bottom:12%;right:6%;display:flex;flex-direction:column;background:#F2EFEA;color:#141518;padding:5px 12px 6px;border-right:4px solid #FF4438;line-height:1.2}
+.mk-lt b{font-size:13px}.mk-lt span{font-size:11px;color:#4A4F56}
+.mk-hl{position:absolute;top:10%;right:5%;bottom:10%;width:46%;background:rgba(13,14,16,.88);border:1px solid #33373C;border-radius:6px;padding:8px 10px;display:flex;flex-direction:column;gap:3px;font-size:11px;color:#C9CBCF;line-height:1.3}
+.mk-hl b{color:#FF5A4E;font-size:12px;margin-bottom:2px}
+.mk-bars{position:absolute;left:8%;bottom:14%;width:48%;height:62%;display:flex;align-items:flex-end;gap:5%}
+.mk-bars i{flex:1;background:#FF4438;border-radius:3px 3px 0 0;opacity:.85}
+.mk-num{position:absolute;right:8%;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-end;color:#F2EFEA;line-height:1.1}
+.mk-num b{font-family:'Rubik',sans-serif;font-size:26px}.mk-num span{font-size:12px;color:#A3A6AB}
 .marq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
 .marq-track{display:flex;width:max-content;animation:marq 70s linear infinite}
 .marq:hover .marq-track,.marq:focus-within .marq-track{animation-play-state:paused}
@@ -150,13 +164,29 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 <section id="slides" class="pad" style="padding: 24px 48px 56px">
 <div style="max-width: 1200px; margin: 0 auto; background: #16181B; border: 1px solid #2A2D31; border-radius: 22px; padding: 40px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 36px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 14px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #FF5A4E" dir="ltr">DIRECT SLIDE FEED</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #FF5A4E; align-self: flex-start" dir="ltr">DIRECT SLIDE FEED</span>
 <h2 style="margin: 0; font-family: 'Rubik', sans-serif; font-weight: 800; font-size: 36px; line-height: 1.2">המצגת נכנסת לשידור ישירות מהמחשב. לא מצלמים את המסך.</h2>
 <p style="margin: 0; color: #C9CBCF">כשיש בהרצאה או בכנס מחשב מצגת, אני מחבר אותו ישירות למערכת השידור. ככה השקפים, הסרטונים והגרפים מגיעים לצופים חדים ונקיים, בלי השתקפויות, בלי מסך מרוח ובלי זווית עקומה.</p>
 <p style="margin: 0; color: #C9CBCF">בזמן אמת אני עובר בין המרצה, הקהל והמצגת, או מציג את המרצה והשקף יחד במסך מפוצל, כך שמי שצופה מהבית או בהקלטה מרגיש כאילו ישב באולם.</p>
 </div>
 <div class="flow" style="display: flex; align-items: stretch; gap: 8px" dir="rtl">
 <div style="flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;background:#0D0E10;border:1px solid #2A2D31;border-radius:14px;padding:18px 12px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF5A4E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg><b style="font-family:'Rubik',sans-serif;font-size:17px">מחשב המצגת</b><span style="font-size:14px;color:#A3A6AB">חיבור ישיר בכבל, באיכות מלאה</span></div><svg class="flowarr" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B6F75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><div style="flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;background:#0D0E10;border:1px solid #2A2D31;border-radius:14px;padding:18px 12px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF5A4E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 8v8M12 8v8M16 8v8"/><path d="M6.5 11h3M10.5 14h3M14.5 10h3"/></svg><b style="font-family:'Rubik',sans-serif;font-size:17px">מערכת השידור</b><span style="font-size:14px;color:#A3A6AB">שילוב עם המצלמות, בזמן אמת</span></div><svg class="flowarr" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B6F75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><div style="flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;background:#0D0E10;border:1px solid #2A2D31;border-radius:14px;padding:18px 12px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF5A4E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M9 20h6M12 16v4"/><circle cx="12" cy="10" r="1.6" fill="#FF5A4E" stroke="none"/></svg><b style="font-family:'Rubik',sans-serif;font-size:17px">הצופים</b><span style="font-size:14px;color:#A3A6AB">שקפים חדים, כאילו ישבו באולם</span></div>
+</div>
+</div>
+</section>
+
+<section id="extras" class="pad" style="padding: 32px 48px 56px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 720px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #FF5A4E; align-self: flex-start" dir="ltr">BEYOND THE STREAM</span>
+<h2 style="margin: 0; font-family: 'Rubik', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15">יותר משידור</h2>
+<p style="margin: 0; color: #C9CBCF">תוספות שהופכות שידור רגיל לחוויה מקצועית, נגישה ומעניינת יותר. אפשר לבחור את מה שמתאים לאירוע שלכם.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px">
+<div class="xc"><div class="mk" aria-hidden="true"><div class="mk-person"></div><div class="mk-cap"><span>And that is why live access matters</span><span dir="rtl">ולכן הנגישות בשידור חי כל כך חשובה</span></div></div><div style="display:flex;flex-direction:column;gap:6px;padding:18px 20px 22px"><h3 style="margin:0;font-family:'Rubik',sans-serif;font-size:20px;font-weight:700">כתוביות בזמן אמת</h3><p style="margin:0;color:#C9CBCF;font-size:16px">כל מה שנאמר מופיע ככתוביות על גבי השידור, בעברית או בכל שפה אחרת. נגיש לכבדי שמיעה, לצפייה בלי סאונד ולקהל מחו״ל.</p></div></div>
+<div class="xc"><div class="mk" aria-hidden="true"><div class="mk-person"></div><div class="mk-lt"><b>ד״ר נועה לוי</b><span>סמנכ״לית חדשנות</span></div></div><div style="display:flex;flex-direction:column;gap:6px;padding:18px 20px 22px"><h3 style="margin:0;font-family:'Rubik',sans-serif;font-size:20px;font-weight:700">שמות ותפקידים על המסך</h3><p style="margin:0;color:#C9CBCF;font-size:16px">כשדובר עולה לבמה, מופיעים על המסך שמו ותפקידו בעיצוב שמותאם למיתוג שלכם, כך שהצופים תמיד יודעים מי מדבר.</p></div></div>
+<div class="xc"><div class="mk" aria-hidden="true"><div class="mk-person" style="left:18%"></div><div class="mk-hl"><b>עיקרי הדברים</b><span>• 3 מגמות לשנה הקרובה</span><span>• איך מודדים הצלחה</span><span>• שאלות מהקהל</span></div></div><div style="display:flex;flex-direction:column;gap:6px;padding:18px 20px 22px"><h3 style="margin:0;font-family:'Rubik',sans-serif;font-size:20px;font-weight:700">דגשים וסיכומים תוך כדי</h3><p style="margin:0;color:#C9CBCF;font-size:16px">עיקרי הדברים מוצגים לצופים בזמן השידור, ואחרי האירוע אפשר לקבל סיכום מסודר שמוכן להפצה.</p></div></div>
+<div class="xc"><div class="mk" aria-hidden="true"><div class="mk-bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:80%"></i><i style="height:95%"></i><i style="height:70%"></i><i style="height:60%"></i><i style="height:45%"></i></div><div class="mk-num"><b dir="ltr">1,240</b><span>צפיות</span></div></div><div style="display:flex;flex-direction:column;gap:6px;padding:18px 20px 22px"><h3 style="margin:0;font-family:'Rubik',sans-serif;font-size:20px;font-weight:700">נתוני צפייה בסוף</h3><p style="margin:0;color:#C9CBCF;font-size:16px">אחרי האירוע מקבלים נתונים על מספר הצופים ועל זמני הצפייה, כדי לדעת בדיוק כמה אנשים השידור הגיע אליהם.</p></div></div>
 </div>
 </div>
 </section>
