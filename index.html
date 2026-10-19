@@ -30,9 +30,27 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 @media (max-width:760px){.amh .hidem{display:none}.amh h1{font-size:40px !important}.amh h2{font-size:30px !important}.amh .pad{padding-inline:20px !important}}
 </style>
 <style>
-[hidden]{display:none !important}html{scroll-behavior:smooth}#contact,#services,#how,#about{scroll-margin-top:80px}
+[hidden]{display:none !important}html{scroll-behavior:smooth}#contact,#services,#how,#about,#gallery{scroll-margin-top:80px}
 .amh form [type=submit][disabled]{opacity:.6;cursor:wait}
 @media (max-width:760px){.amh form{grid-template-columns:minmax(0,1fr) !important}.amh form>div{grid-column:1/-1}.amh #contact>div{padding:24px !important}.amh #about .stat3{grid-template-columns:minmax(0,1fr) !important}}
+</style>
+<style>
+.marq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.marq-track{display:flex;width:max-content;animation:marq 70s linear infinite}
+.marq:hover .marq-track,.marq:focus-within .marq-track{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+.gi{all:unset;cursor:zoom-in;margin-inline-end:14px;border-radius:14px;overflow:hidden;display:block;border:1px solid #2A2D31;flex:none}
+.gi img{display:block;height:300px;width:auto;transition:transform .5s ease}
+.gi:hover img{transform:scale(1.04)}.gi:focus-visible{outline:2px solid #FF5A4E;outline-offset:2px}
+@media (max-width:760px){.gi img{height:200px}}
+@media (prefers-reduced-motion:reduce){.marq{overflow-x:auto}.marq-track{animation:none}.gi[aria-hidden="true"]{display:none}}
+#lb{border:0;padding:0;background:transparent;max-width:min(1400px,94vw);max-height:92vh;overflow:visible;color:#F2EFEA}
+#lb::backdrop{background:rgba(5,6,8,.92)}
+#lb img{display:block;max-width:min(1400px,94vw);max-height:82vh;border-radius:12px;margin:0 auto}
+#lbCap{text-align:center;color:#C9CBCF;font-size:15px;margin:12px 0 0;font-family:'Assistant',sans-serif}
+.lbx,.lbn{all:unset;position:fixed;cursor:pointer;color:#F2EFEA;background:rgba(22,24,27,.85);border:1px solid #33373C;border-radius:999px;width:48px;height:48px;display:grid;place-items:center;font-size:26px;line-height:1}
+.lbx{top:18px;right:18px;font-size:20px}.lbp{left:18px;top:50%;transform:translateY(-50%)}.lbnx{right:18px;top:50%;transform:translateY(-50%)}
+.lbx:focus-visible,.lbn:focus-visible{outline:2px solid #FF5A4E}
 </style>
 </head>
 <body>
@@ -87,6 +105,14 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 <span style="font-family: 'Rubik', sans-serif; font-weight: 700; font-size: 22px; color: #E4E2DE">Echo</span>
 <span style="font-family: 'Rubik', sans-serif; font-weight: 700; font-size: 22px; color: #E4E2DE">קבוצת עזריאלי</span>
 </div>
+</section>
+
+<section id="gallery" style="padding: 40px 0 56px" aria-labelledby="galT">
+<div class="pad" style="max-width: 1200px; margin: 0 auto 28px; padding-inline: 48px; display: flex; flex-direction: column; gap: 8px">
+<h2 id="galT" style="margin: 0; font-family: 'Rubik', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15">מהשטח</h2>
+<p style="margin: 0; color: #C9CBCF">כנסים, פודקאסטים ואירועים שהפקתי. לחיצה על תמונה פותחת אותה בגדול.</p>
+</div>
+<div class="marq" dir="ltr"><div class="marq-track"><button type="button" class="gi" data-i="0"><img src="assets/gallery/setup-wide-t.jpg" alt="מצלמה מוכנה לשידור במתחם אירועים, מול מסך ושורות כיסאות" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="1"><img src="assets/gallery/conference-t.jpg" alt="שידור חי מכנס: מצלמות ומוניטורים מול הבמה" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="2"><img src="assets/gallery/monitor-t.jpg" alt="מסך המצלמה במהלך הקמה לשידור 4K" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="3"><img src="assets/gallery/podcast-t.jpg" alt="מצלמה מקליטה פודקאסט עם שלושה משתתפים" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="4"><img src="assets/gallery/control-t.jpg" alt="עמדת שידור: מצלמה על חצובה, מוניטור, מיקסר ומיקרופונים" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="5"><img src="assets/gallery/meeting-t.jpg" alt="מצלמה מצלמת שיחה בחדר ישיבות" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="6"><img src="assets/gallery/ballroom-t.jpg" alt="מצלמה מוכנה לשידור באולם אירועים" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="0" aria-hidden="true" tabindex="-1"><img src="assets/gallery/setup-wide-t.jpg" alt="" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="1" aria-hidden="true" tabindex="-1"><img src="assets/gallery/conference-t.jpg" alt="" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="2" aria-hidden="true" tabindex="-1"><img src="assets/gallery/monitor-t.jpg" alt="" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="3" aria-hidden="true" tabindex="-1"><img src="assets/gallery/podcast-t.jpg" alt="" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="4" aria-hidden="true" tabindex="-1"><img src="assets/gallery/control-t.jpg" alt="" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="5" aria-hidden="true" tabindex="-1"><img src="assets/gallery/meeting-t.jpg" alt="" loading="lazy" decoding="async" height="600"></button><button type="button" class="gi" data-i="6" aria-hidden="true" tabindex="-1"><img src="assets/gallery/ballroom-t.jpg" alt="" loading="lazy" decoding="async" height="600"></button></div></div>
 </section>
 
 <section id="services" class="pad" style="padding: 56px 48px">
@@ -210,6 +236,7 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 </footer>
 
 </div>
+<dialog id="lb" aria-label="תצוגת תמונה"><button type="button" class="lbx" data-lb="close" aria-label="סגירה">✕</button><button type="button" class="lbn lbp" data-lb="next" aria-label="התמונה הבאה"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><img id="lbImg" alt=""><button type="button" class="lbn lbnx" data-lb="prev" aria-label="התמונה הקודמת"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button><p id="lbCap"></p></dialog>
 <script>
 (function(){
  var f=document.getElementById('leadForm');if(!f)return;
@@ -223,6 +250,15 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
    .then(function(){f.hidden=true;document.getElementById('thanks').hidden=false})
    .catch(function(){err.hidden=false;b.disabled=false;b.textContent='שליחה'});
  });
+})();
+
+(function(){
+ var G=[["assets/gallery/setup-wide.jpg","מצלמה מוכנה לשידור במתחם אירועים, מול מסך ושורות כיסאות"],["assets/gallery/conference.jpg","שידור חי מכנס: מצלמות ומוניטורים מול הבמה"],["assets/gallery/monitor.jpg","מסך המצלמה במהלך הקמה לשידור 4K"],["assets/gallery/podcast.jpg","מצלמה מקליטה פודקאסט עם שלושה משתתפים"],["assets/gallery/control.jpg","עמדת שידור: מצלמה על חצובה, מוניטור, מיקסר ומיקרופונים"],["assets/gallery/meeting.jpg","מצלמה מצלמת שיחה בחדר ישיבות"],["assets/gallery/ballroom.jpg","מצלמה מוכנה לשידור באולם אירועים"]],d=document.getElementById('lb'),im=document.getElementById('lbImg'),cap=document.getElementById('lbCap'),cur=0;
+ if(!d||!d.showModal)return;
+ function show(i){cur=(i+G.length)%G.length;im.src=G[cur][0];im.alt=G[cur][1];cap.textContent=G[cur][1]}
+ document.querySelectorAll('.gi').forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.i);d.showModal()})});
+ d.addEventListener('click',function(e){var a=e.target.dataset&&e.target.dataset.lb;if(a==='close'||e.target===d)d.close();else if(a==='next')show(cur+1);else if(a==='prev')show(cur-1)});
+ d.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')show(cur+1);if(e.key==='ArrowRight')show(cur-1)});
 })();
 </script>
 </body>
