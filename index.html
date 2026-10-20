@@ -30,7 +30,7 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 @media (max-width:760px){.amh .hidem,.amh .navcta{display:none !important}.amh h1{font-size:40px !important}.amh h2{font-size:30px !important}.amh .pad{padding-inline:20px !important}}
 </style>
 <style>
-[hidden]{display:none !important}html{scroll-behavior:smooth}#contact,#services,#how,#about,#gallery,#slides,#extras{scroll-margin-top:80px}
+[hidden]{display:none !important}html{scroll-behavior:smooth}#contact,#services,#how,#about,#gallery,#slides,#extras,#faq{scroll-margin-top:80px}
 .amh form [type=submit][disabled]{opacity:.6;cursor:wait}
 @media (max-width:760px){.amh form{grid-template-columns:minmax(0,1fr) !important}.amh form>div{grid-column:1/-1}.amh #contact>div{padding:24px !important}.amh #about .stat3{grid-template-columns:minmax(0,1fr) !important}}
 </style>
@@ -59,6 +59,15 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 .fab-ct.off{opacity:0;visibility:hidden;transform:scale(.6)}
 @media (max-width:760px){.fab{left:12px;bottom:12px;gap:8px;transition:opacity .3s,visibility .3s}.fab-b{width:48px;height:48px}.fab.hid{opacity:0;visibility:hidden}}
 @media print{.fab{display:none}}
+.faq{border-top:1px solid #2A2D31}
+.faq-i{border-bottom:1px solid #2A2D31}
+.faq-i summary{list-style:none;cursor:pointer;padding:20px 4px;font-family:'Rubik',sans-serif;font-weight:500;font-size:19px;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px}
+.faq-i summary::-webkit-details-marker{display:none}
+.faq-i summary::after{content:"+";font-family:'IBM Plex Mono',monospace;font-size:24px;color:#FF5A4E;transition:transform .2s;flex:none}
+.faq-i[open] summary::after{transform:rotate(45deg)}
+.faq-i summary:hover{color:#FFFFFF}.faq-i summary:focus-visible{outline:2px solid #FF5A4E;outline-offset:2px;border-radius:6px}
+.faq-i p{margin:0 4px 22px;color:#C9CBCF;font-size:17px;max-width:760px}
+@media (max-width:760px){.faq-i summary{font-size:17px;padding:16px 2px}}
 .marq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
 .marq-track{display:flex;width:max-content;animation:marq 70s linear infinite}
 .marq:hover .marq-track,.marq:focus-within .marq-track{animation-play-state:paused}
@@ -76,6 +85,7 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 .lbx{top:18px;right:18px;font-size:20px}.lbp{left:18px;top:50%;transform:translateY(-50%)}.lbnx{right:18px;top:50%;transform:translateY(-50%)}
 .lbx:focus-visible,.lbn:focus-visible{outline:2px solid #FF5A4E}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "מה צריך להכין לקראת האירוע?", "acceptedAnswer": {"@type": "Answer", "text": "נקודת חשמל, מקום קטן לעמדה ליד הקהל, ובשידור חי גם חיבור אינטרנט יציב, עדיף קווי. אם אין באולם אינטרנט מתאים, אני מביא פתרון גיבוי סלולרי."}}, {"@type": "Question", "name": "כמה זמן לוקחת ההקמה?", "acceptedAnswer": {"@type": "Answer", "text": "בדרך כלל שעה עד שעה וחצי לפני תחילת האירוע. אני מגיע מוקדם, מקים ובודק הכל, כך שאין לחץ ברגע האחרון."}}, {"@type": "Question", "name": "אפשר לשדר לכמה פלטפורמות במקביל?", "acceptedAnswer": {"@type": "Answer", "text": "כן. אפשר לשדר בו זמנית לפייסבוק, ליוטיוב, ללינקדאין, לזום או לאתר שלכם, ואפשר גם שידור סגור רק למוזמנים."}}, {"@type": "Question", "name": "מתי מקבלים את ההקלטה והחומרים?", "acceptedAnswer": {"@type": "Answer", "text": "הקלטה מלאה של האירוע תוך 24 שעות, ובמקרים דחופים אפשר לקצר למינימום האפשרי. סרטון ערוך וקטעים לרשתות תוך 24 עד 48 שעות."}}, {"@type": "Question", "name": "אם בחרתי בשידור חי, אקבל גם הקלטה?", "acceptedAnswer": {"@type": "Answer", "text": "כן. הקלטה של השידור החי נמסרת באיכות המקסימלית. אפשר לערוך אותה ולהוסיף לה כתוביות, גרפיקה ועוד, גם אחרי שהאירוע הסתיים."}}, {"@type": "Question", "name": "מה קורה אם יש בעיה בשידור באמצע?", "acceptedAnswer": {"@type": "Answer", "text": "השידור החי מגובה בכמה אמצעים. חיבור אינטרנט מקומי, עדיף קווי ולא אלחוטי, מבטיח שידור רציף ובאיכות הכי טובה. ובכל מקרה, הצילום נמשך כל הזמן, ואחרי האירוע נמסרת גרסה מוקלטת."}}, {"@type": "Question", "name": "כמה זה עולה?", "acceptedAnswer": {"@type": "Answer", "text": "המחיר תלוי במספר המצלמות, באורך האירוע ובתוספות. אחרי שיחה קצרה תקבלו הצעת מחיר מסודרת, בלי הפתעות."}}, {"@type": "Question", "name": "אפשר לקבל גם תמונות מהאירוע?", "acceptedAnswer": {"@type": "Answer", "text": "כן. צילום סטילס במקביל לווידאו, ותמונות ערוכות שמוכנות לאתר, לדוברות ולרשתות."}}, {"@type": "Question", "name": "הכתוביות והשמות על המסך מתאימים גם לסרטון ערוך?", "acceptedAnswer": {"@type": "Answer", "text": "כן. כתוביות בכל שפה, שמות ותפקידים של דוברים ודגשים מהאירוע אפשר להוסיף גם בשידור החי וגם בסרטון הערוך."}}]}</script>
 </head>
 <body>
 <div class="amh" dir="rtl" style="background: #0D0E10; color: #F2EFEA; font-family: 'Assistant', 'Rubik', sans-serif; font-size: 18px; line-height: 1.6; min-height: 100vh">
@@ -240,6 +250,23 @@ a{color:#F2EFEA}a:hover{color:#FFFFFF}
 <div style="border: 1px solid #2A2D31; border-radius: 14px; padding: 16px"><div style="font-family: 'Rubik', sans-serif; font-weight: 800; font-size: 30px">1</div><div style="font-size: 15px; color: #A3A6AB">איש קשר מההתחלה ועד הסוף</div></div>
 <div style="border: 1px solid #2A2D31; border-radius: 14px; padding: 16px"><div style="font-family: 'Rubik', sans-serif; font-weight: 800; font-size: 30px" dir="ltr">Multi‑cam</div><div style="font-size: 15px; color: #A3A6AB">שידור בכמה מצלמות</div></div>
 </div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="pad" style="padding: 40px 48px 24px">
+<div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-family: 'Rubik', sans-serif; font-weight: 800; font-size: 42px; line-height: 1.15">שאלות נפוצות</h2>
+<div class="faq">
+<details class="faq-i"><summary>מה צריך להכין לקראת האירוע?</summary><p>נקודת חשמל, מקום קטן לעמדה ליד הקהל, ובשידור חי גם חיבור אינטרנט יציב, עדיף קווי. אם אין באולם אינטרנט מתאים, אני מביא פתרון גיבוי סלולרי.</p></details>
+<details class="faq-i"><summary>כמה זמן לוקחת ההקמה?</summary><p>בדרך כלל שעה עד שעה וחצי לפני תחילת האירוע. אני מגיע מוקדם, מקים ובודק הכל, כך שאין לחץ ברגע האחרון.</p></details>
+<details class="faq-i"><summary>אפשר לשדר לכמה פלטפורמות במקביל?</summary><p>כן. אפשר לשדר בו זמנית לפייסבוק, ליוטיוב, ללינקדאין, לזום או לאתר שלכם, ואפשר גם שידור סגור רק למוזמנים.</p></details>
+<details class="faq-i"><summary>מתי מקבלים את ההקלטה והחומרים?</summary><p>הקלטה מלאה של האירוע תוך 24 שעות, ובמקרים דחופים אפשר לקצר למינימום האפשרי. סרטון ערוך וקטעים לרשתות תוך 24 עד 48 שעות.</p></details>
+<details class="faq-i"><summary>אם בחרתי בשידור חי, אקבל גם הקלטה?</summary><p>כן. הקלטה של השידור החי נמסרת באיכות המקסימלית. אפשר לערוך אותה ולהוסיף לה כתוביות, גרפיקה ועוד, גם אחרי שהאירוע הסתיים.</p></details>
+<details class="faq-i"><summary>מה קורה אם יש בעיה בשידור באמצע?</summary><p>השידור החי מגובה בכמה אמצעים. חיבור אינטרנט מקומי, עדיף קווי ולא אלחוטי, מבטיח שידור רציף ובאיכות הכי טובה. ובכל מקרה, הצילום נמשך כל הזמן, ואחרי האירוע נמסרת גרסה מוקלטת.</p></details>
+<details class="faq-i"><summary>כמה זה עולה?</summary><p>המחיר תלוי במספר המצלמות, באורך האירוע ובתוספות. אחרי שיחה קצרה תקבלו הצעת מחיר מסודרת, בלי הפתעות.</p></details>
+<details class="faq-i"><summary>אפשר לקבל גם תמונות מהאירוע?</summary><p>כן. צילום סטילס במקביל לווידאו, ותמונות ערוכות שמוכנות לאתר, לדוברות ולרשתות.</p></details>
+<details class="faq-i"><summary>הכתוביות והשמות על המסך מתאימים גם לסרטון ערוך?</summary><p>כן. כתוביות בכל שפה, שמות ותפקידים של דוברים ודגשים מהאירוע אפשר להוסיף גם בשידור החי וגם בסרטון הערוך.</p></details>
 </div>
 </div>
 </section>
